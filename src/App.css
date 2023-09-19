@@ -65,21 +65,23 @@
   color: rgb(194, 194, 194);
   font-size: 1.3rem;
 }
-.HeroSection .hero-text .blocks {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.HeroSection .hero-text .buttons {
+  display: flex;
   gap: 1rem;
-  justify-content: center;
-  align-items: start;
 }
-.HeroSection .hero-text .blocks .block {
-  background-color: black;
+.HeroSection .hero-text .buttons a {
+  text-decoration: none;
+  background-color: rgb(7, 255, 40);
+  color: black;
+  font-weight: 600;
+  font-size: 1.5rem;
   padding: 1rem;
   border-radius: 1rem;
 }
-.HeroSection .hero-text .blocks .block h3 {
-  color: rgba(7, 255, 40, 0.573);
-  font-size: 1.5rem;
+.HeroSection .hero-text .buttons a.alt {
+  background-color: transparent;
+  border: 2px solid rgb(7, 255, 40);
+  color: rgb(7, 255, 40);
 }
 .HeroSection .hero-image {
   display: flex;

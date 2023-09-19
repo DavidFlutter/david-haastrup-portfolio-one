@@ -73,21 +73,24 @@ $themeDull: rgba(7, 255, 40, 0.573);;
             color: rgb(194, 194, 194);
             font-size: 1.3rem;
         }
-        .blocks{
-            display: grid;
-            grid-template-columns: 1fr 1fr ;
+        .buttons{
+            display: flex;
             gap: 1rem;
-            justify-content: center;
-            align-items: start;
-            .block{
-                background-color: black;
+            a{
+                text-decoration: none;
+                background-color: $theme;
+                color: black;
+                font-weight: 600;
+                font-size: 1.5rem;
                 padding: 1rem;
                 border-radius: 1rem;
-                h3{
-                    color: $themeDull;
-                    font-size: 1.5rem;
+                &.alt{
+                    background-color: transparent;
+                    border: 2px solid $theme;
+                    color: $theme;
                 }
             }
+
         }
     }
     .hero-image{
