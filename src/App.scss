@@ -1,0 +1,107 @@
+$bg: rgb(31, 31, 31);
+$theme: rgb(7, 255, 40);
+$themeDull: rgba(7, 255, 40, 0.573);;
+
+
+.wrapper{
+    max-width: 800px;
+    padding: 3rem;
+    margin: 0 auto;
+}
+
+.Header{
+    background-color: black;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 3rem;
+    left: 3rem;
+    right: 3rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    h1{
+        padding: 0;
+        margin: 0;
+        font-weight: 400;
+        font-size: 1.5rem;
+        color: rgb(7, 255, 40);
+    }
+    
+    nav{
+        ul{
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            a{
+                text-decoration: none;
+                color: $themeDull;
+                font-size: 1.3rem;
+                transition: all 0.3s;
+                &:hover{
+                    text-decoration: underline;
+                    color: $theme;
+                }
+            }
+        }
+    }
+}
+
+.HeroSection{
+    padding-top: 7rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 4rem;
+    align-items: center;
+    .hero-text{
+        h2{
+            color: $themeDull;
+            font-size: 3rem;
+            span{
+                background-color: yellow;
+                color: black;
+                padding: 0rem 0.5rem ;
+                border-radius: 0.5rem
+            }
+        }
+        p{
+            color: rgb(194, 194, 194);
+            font-size: 1.3rem;
+        }
+        .blocks{
+            display: grid;
+            grid-template-columns: 1fr 1fr ;
+            gap: 1rem;
+            justify-content: center;
+            align-items: start;
+            .block{
+                background-color: black;
+                padding: 1rem;
+                border-radius: 1rem;
+                h3{
+                    color: $themeDull;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+    .hero-image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5rem;
+        height: 80vh;
+        img{
+            height: 70%;
+            width: 70%;
+            object-fit: cover;
+            border-radius: 3rem;
+            border: 2px solid $themeDull
+        }
+    }
+}
