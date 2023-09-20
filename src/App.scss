@@ -1,7 +1,7 @@
 $bg: rgb(31, 31, 31);
-$theme: rgb(7, 255, 40);
-$themeDull: rgba(7, 255, 40, 0.573);;
-
+$theme: rgb(255, 187, 29);
+$themeDull: rgba(255, 187, 29, 0.692);
+$textColour: rgb(194, 194, 194);
 
 .wrapper{
     max-width: 800px;
@@ -10,24 +10,24 @@ $themeDull: rgba(7, 255, 40, 0.573);;
 }
 
 .Header{
-    background-color: black;
+    background-color: $bg;
     max-width: 800px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    top: 3rem;
+    top: 0rem;
     left: 3rem;
     right: 3rem;
-    padding: 1.5rem;
-    border-radius: 1rem;
+    padding: 2rem 0;
+    // border-radius: 1rem;
     h1{
         padding: 0;
         margin: 0;
         font-weight: 400;
         font-size: 1.5rem;
-        color: rgb(7, 255, 40);
+        color: $theme
     }
     
     nav{
@@ -70,7 +70,7 @@ $themeDull: rgba(7, 255, 40, 0.573);;
             }
         }
         p{
-            color: rgb(194, 194, 194);
+            color: $textColour;
             font-size: 1.3rem;
         }
         .buttons{
@@ -109,6 +109,7 @@ $themeDull: rgba(7, 255, 40, 0.573);;
 }
 
 .ProjectsSection{
+    margin-top: 5rem;
     h2{
         color: $themeDull;
     }
@@ -123,11 +124,12 @@ $themeDull: rgba(7, 255, 40, 0.573);;
     }
     .project-tile{
         background-color: black;
-        height: 35rem;
+        height: 47rem;
         min-width: 30rem;
+        max-width: 30rem;
         border-radius: 3rem;
         .image{
-            height: 70%;
+            height: 62%;
             img{
                 object-fit: cover;
                 height: 100%;
@@ -136,6 +138,7 @@ $themeDull: rgba(7, 255, 40, 0.573);;
             }
         }
         .content{
+            height: 30%;
             padding: 1rem;
             display: flex;
             align-items: center;
@@ -144,6 +147,13 @@ $themeDull: rgba(7, 255, 40, 0.573);;
             h3{
                 color: $themeDull;
                 font-size: 1.5rem;
+            }
+            p{
+                color: $textColour;
+                white-space: normal;
+                padding: 0rem 1rem;
+                flex-grow: 1;
+                font-size: 1.2rem;
             }
             .buttons{
                 display: flex;
@@ -156,6 +166,56 @@ $themeDull: rgba(7, 255, 40, 0.573);;
                     font-size: 1.2rem;
                     padding: 0.5rem;
                     border-radius: 0.5rem;
+                    &.alt{
+                        background-color: transparent;
+                        border: 2px solid $theme;
+                        color: $theme;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.ContactSection{
+    margin-top: 7rem;
+    h2{
+        color: $themeDull;
+    }
+    .contact-wrapper{
+        background-color: black;
+        border-radius: 3rem;
+        padding: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .buttons{
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            .con{
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                span{
+                    color: $themeDull;
+                    font-size: 1.2rem;
+                }
+                a{
+                    text-decoration: none;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 3rem;
+                    background-color: $theme;
+                    color: black;
+                    font-weight: 400;
+                    font-size: 1.2rem;
+                    padding: 0.5rem;
+                    border-radius: 0.5rem;
+                    svg{
+                        font-size: 2rem;
+                    }
                     &.alt{
                         background-color: transparent;
                         border: 2px solid $theme;

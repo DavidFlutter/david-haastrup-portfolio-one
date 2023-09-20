@@ -3,7 +3,7 @@ import projects from "../data/projects";
 
 const ProjectsSection = () => {
   return (
-    <div className='ProjectsSection'>
+    <div className='ProjectsSection' id='ProjectsSection'>
         <h2>Selected Projects</h2>
         <div className="projects-container">
             {projects.map(project => (
@@ -13,6 +13,7 @@ const ProjectsSection = () => {
                     </div>
                     <div className="content">
                         <h3>{project.name}</h3>
+                        <p>{project.desc}</p>
                         <div className="buttons">
                             <a href={project.link}
                                 target='_blank' rel="noreferrer"

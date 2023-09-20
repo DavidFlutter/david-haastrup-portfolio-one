@@ -2,7 +2,7 @@ import React from 'react'
 
 const HeroSection = () => {
   return (
-    <div className='HeroSection'>
+    <div className='HeroSection' id='HeroSection'>
         <div className="hero-text">
             <h2>
                 Hi there I'm David, a Fullstack <span>JS</span> developer based in Nigeria

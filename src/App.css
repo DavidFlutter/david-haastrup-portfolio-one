@@ -5,25 +5,24 @@
 }
 
 .Header {
-  background-color: black;
+  background-color: rgb(31, 31, 31);
   max-width: 800px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  top: 3rem;
+  top: 0rem;
   left: 3rem;
   right: 3rem;
-  padding: 1.5rem;
-  border-radius: 1rem;
+  padding: 2rem 0;
 }
 .Header h1 {
   padding: 0;
   margin: 0;
   font-weight: 400;
   font-size: 1.5rem;
-  color: rgb(7, 255, 40);
+  color: rgb(255, 187, 29);
 }
 .Header nav ul {
   display: flex;
@@ -35,13 +34,13 @@
 }
 .Header nav ul a {
   text-decoration: none;
-  color: rgba(7, 255, 40, 0.573);
+  color: rgba(255, 187, 29, 0.692);
   font-size: 1.3rem;
   transition: all 0.3s;
 }
 .Header nav ul a:hover {
   text-decoration: underline;
-  color: rgb(7, 255, 40);
+  color: rgb(255, 187, 29);
 }
 
 .HeroSection {
@@ -52,7 +51,7 @@
   align-items: center;
 }
 .HeroSection .hero-text h2 {
-  color: rgba(7, 255, 40, 0.573);
+  color: rgba(255, 187, 29, 0.692);
   font-size: 3rem;
 }
 .HeroSection .hero-text h2 span {
@@ -71,7 +70,7 @@
 }
 .HeroSection .hero-text .buttons a {
   text-decoration: none;
-  background-color: rgb(7, 255, 40);
+  background-color: rgb(255, 187, 29);
   color: black;
   font-weight: 600;
   font-size: 1.5rem;
@@ -80,8 +79,8 @@
 }
 .HeroSection .hero-text .buttons a.alt {
   background-color: transparent;
-  border: 2px solid rgb(7, 255, 40);
-  color: rgb(7, 255, 40);
+  border: 2px solid rgb(255, 187, 29);
+  color: rgb(255, 187, 29);
 }
 .HeroSection .hero-image {
   display: flex;
@@ -96,11 +95,14 @@
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 3rem;
-  border: 2px solid rgba(7, 255, 40, 0.573);
+  border: 2px solid rgba(255, 187, 29, 0.692);
 }
 
+.ProjectsSection {
+  margin-top: 5rem;
+}
 .ProjectsSection h2 {
-  color: rgba(7, 255, 40, 0.573);
+  color: rgba(255, 187, 29, 0.692);
 }
 .ProjectsSection .projects-container {
   display: flex;
@@ -113,12 +115,13 @@
 }
 .ProjectsSection .project-tile {
   background-color: black;
-  height: 35rem;
+  height: 47rem;
   min-width: 30rem;
+  max-width: 30rem;
   border-radius: 3rem;
 }
 .ProjectsSection .project-tile .image {
-  height: 70%;
+  height: 62%;
 }
 .ProjectsSection .project-tile .image img {
   -o-object-fit: cover;
@@ -128,6 +131,7 @@
   border-radius: 3rem 3rem 0 0;
 }
 .ProjectsSection .project-tile .content {
+  height: 30%;
   padding: 1rem;
   display: flex;
   align-items: center;
@@ -135,8 +139,15 @@
   flex-direction: column;
 }
 .ProjectsSection .project-tile .content h3 {
-  color: rgba(7, 255, 40, 0.573);
+  color: rgba(255, 187, 29, 0.692);
   font-size: 1.5rem;
+}
+.ProjectsSection .project-tile .content p {
+  color: rgb(194, 194, 194);
+  white-space: normal;
+  padding: 0rem 1rem;
+  flex-grow: 1;
+  font-size: 1.2rem;
 }
 .ProjectsSection .project-tile .content .buttons {
   display: flex;
@@ -144,7 +155,7 @@
 }
 .ProjectsSection .project-tile .content .buttons a {
   text-decoration: none;
-  background-color: rgb(7, 255, 40);
+  background-color: rgb(255, 187, 29);
   color: black;
   font-weight: 400;
   font-size: 1.2rem;
@@ -153,6 +164,56 @@
 }
 .ProjectsSection .project-tile .content .buttons a.alt {
   background-color: transparent;
-  border: 2px solid rgb(7, 255, 40);
-  color: rgb(7, 255, 40);
+  border: 2px solid rgb(255, 187, 29);
+  color: rgb(255, 187, 29);
+}
+
+.ContactSection {
+  margin-top: 7rem;
+}
+.ContactSection h2 {
+  color: rgba(255, 187, 29, 0.692);
+}
+.ContactSection .contact-wrapper {
+  background-color: black;
+  border-radius: 3rem;
+  padding: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ContactSection .contact-wrapper .buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.ContactSection .contact-wrapper .buttons .con {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.ContactSection .contact-wrapper .buttons .con span {
+  color: rgba(255, 187, 29, 0.692);
+  font-size: 1.2rem;
+}
+.ContactSection .contact-wrapper .buttons .con a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  background-color: rgb(255, 187, 29);
+  color: black;
+  font-weight: 400;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+.ContactSection .contact-wrapper .buttons .con a svg {
+  font-size: 2rem;
+}
+.ContactSection .contact-wrapper .buttons .con a.alt {
+  background-color: transparent;
+  border: 2px solid rgb(255, 187, 29);
+  color: rgb(255, 187, 29);
 }/*# sourceMappingURL=App.css.map */

@@ -6,9 +6,9 @@ const Header = () => {
         <h1>David The Fullstack Dev</h1>
         <nav>
             <ul>
-                <a href="#">About</a>
-                <a href="#">Projects</a>
-                <a href="#">Contact</a>
+                <a href="#HeroSection">About</a>
+                <a href="#ProjectsSection">Projects</a>
+                <a href="#ContactSection">Contact</a>
             </ul>
         </nav>
     </div>
