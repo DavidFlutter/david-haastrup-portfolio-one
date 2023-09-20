@@ -90,7 +90,6 @@ $themeDull: rgba(7, 255, 40, 0.573);;
                     color: $theme;
                 }
             }
-
         }
     }
     .hero-image{
@@ -105,6 +104,65 @@ $themeDull: rgba(7, 255, 40, 0.573);;
             object-fit: cover;
             border-radius: 3rem;
             border: 2px solid $themeDull
+        }
+    }
+}
+
+.ProjectsSection{
+    h2{
+        color: $themeDull;
+    }
+    .projects-container{
+        display: flex;
+        gap: 2rem;
+        overflow-y: scroll;
+        white-space: nowrap;
+        &::-webkit-scrollbar{
+            display: none;
+        }
+    }
+    .project-tile{
+        background-color: black;
+        height: 35rem;
+        min-width: 30rem;
+        border-radius: 3rem;
+        .image{
+            height: 70%;
+            img{
+                object-fit: cover;
+                height: 100%;
+                width: 100%;
+                border-radius: 3rem 3rem 0 0;
+            }
+        }
+        .content{
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            h3{
+                color: $themeDull;
+                font-size: 1.5rem;
+            }
+            .buttons{
+                display: flex;
+                gap: 1rem;
+                a{
+                    text-decoration: none;
+                    background-color: $theme;
+                    color: black;
+                    font-weight: 400;
+                    font-size: 1.2rem;
+                    padding: 0.5rem;
+                    border-radius: 0.5rem;
+                    &.alt{
+                        background-color: transparent;
+                        border: 2px solid $theme;
+                        color: $theme;
+                    }
+                }
+            }
         }
     }
 }

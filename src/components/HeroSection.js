@@ -11,7 +11,7 @@ const HeroSection = () => {
                 Hello, I'm David Haastrup, a Fullstack Web Developer with a passion for crafting digital solutions using JavaScript. While I may be at the beginning of my professional journey, my enthusiasm for web development knows no bounds.
             </p>
             <div className="buttons">
-                <a href="" 
+                <a href="https://www.linkedin.com/in/david-haastrup-678609209/" 
                     target='_blank' rel="noreferrer"
                 >
                     View Linkedin

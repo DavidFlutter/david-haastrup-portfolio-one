@@ -1,6 +1,7 @@
 import './App.css';
 import Header from './components/Header';
 import HeroSection from './components/HeroSection';
+import ProjectsSection from './components/ProjectsSection';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <div className="wrapper">
         <Header></Header>
         <HeroSection></HeroSection>
+        <ProjectsSection></ProjectsSection>
       </div>
     </div>
   );
