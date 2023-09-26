@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/david-haastrup-portfolio-one/static/css/main.cea05c54.css",
+    "main.js": "/david-haastrup-portfolio-one/static/js/main.685a7b49.js",
+    "static/media/robo_art_image.png": "/david-haastrup-portfolio-one/static/media/robo_art_image.4a95e244166de3991aa9.png",
+    "static/media/frontend_mentor_clone_image.png": "/david-haastrup-portfolio-one/static/media/frontend_mentor_clone_image.fe74a9defabea86578de.png",
+    "static/media/fitness_website_image.png": "/david-haastrup-portfolio-one/static/media/fitness_website_image.9f4b6c62c55c3963cba1.png",
+    "static/media/hero_image.jpg": "/david-haastrup-portfolio-one/static/media/hero_image.6219f4ebeaa984dedcbe.jpg",
+    "index.html": "/david-haastrup-portfolio-one/index.html",
+    "main.cea05c54.css.map": "/david-haastrup-portfolio-one/static/css/main.cea05c54.css.map",
+    "main.685a7b49.js.map": "/david-haastrup-portfolio-one/static/js/main.685a7b49.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cea05c54.css",
+    "static/js/main.685a7b49.js"
+  ]
+}
