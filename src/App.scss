@@ -108,6 +108,14 @@ $textColour: rgb(194, 194, 194);
     }
 }
 
+
+@media (max-width: 600px) {
+    .HeroSection{
+        grid-template-columns: 1fr;
+    }
+}
+
+
 .ProjectsSection{
     margin-top: 5rem;
     h2{

@@ -98,6 +98,11 @@
   border: 2px solid rgba(255, 187, 29, 0.692);
 }
 
+@media (max-width: 600px) {
+  .HeroSection {
+    grid-template-columns: 1fr;
+  }
+}
 .ProjectsSection {
   margin-top: 5rem;
 }
