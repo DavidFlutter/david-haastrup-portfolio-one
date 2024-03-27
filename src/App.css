@@ -20,9 +20,9 @@
 .Header h1 {
   padding: 0;
   margin: 0;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 1.5rem;
-  color: rgb(255, 187, 29);
+  color: rgb(171, 55, 255);
 }
 .Header nav ul {
   display: flex;
@@ -34,13 +34,13 @@
 }
 .Header nav ul a {
   text-decoration: none;
-  color: rgba(255, 187, 29, 0.692);
+  color: rgb(171, 55, 255);
   font-size: 1.3rem;
   transition: all 0.3s;
 }
 .Header nav ul a:hover {
   text-decoration: underline;
-  color: rgb(255, 187, 29);
+  color: rgb(171, 55, 255);
 }
 
 .HeroSection {
@@ -51,12 +51,12 @@
   align-items: center;
 }
 .HeroSection .hero-text h2 {
-  color: rgba(255, 187, 29, 0.692);
+  color: rgb(171, 55, 255);
   font-size: 3rem;
 }
 .HeroSection .hero-text h2 span {
-  background-color: yellow;
-  color: black;
+  background-color: rgb(149, 0, 255);
+  color: white;
   padding: 0rem 0.5rem;
   border-radius: 0.5rem;
 }
@@ -70,7 +70,7 @@
 }
 .HeroSection .hero-text .buttons a {
   text-decoration: none;
-  background-color: rgb(255, 187, 29);
+  background-color: rgb(171, 55, 255);
   color: black;
   font-weight: 600;
   font-size: 1.5rem;
@@ -79,8 +79,8 @@
 }
 .HeroSection .hero-text .buttons a.alt {
   background-color: transparent;
-  border: 2px solid rgb(255, 187, 29);
-  color: rgb(255, 187, 29);
+  border: 2px solid rgb(171, 55, 255);
+  color: rgb(171, 55, 255);
 }
 .HeroSection .hero-image {
   display: flex;
@@ -95,19 +95,22 @@
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 3rem;
-  border: 2px solid rgba(255, 187, 29, 0.692);
+  border: 2px solid rgb(171, 55, 255);
 }
 
 @media (max-width: 600px) {
   .HeroSection {
     grid-template-columns: 1fr;
   }
+  .HeroSection .hero-image {
+    display: none;
+  }
 }
 .ProjectsSection {
   margin-top: 5rem;
 }
 .ProjectsSection h2 {
-  color: rgba(255, 187, 29, 0.692);
+  color: rgb(171, 55, 255);
 }
 .ProjectsSection .projects-container {
   display: flex;
@@ -144,7 +147,7 @@
   flex-direction: column;
 }
 .ProjectsSection .project-tile .content h3 {
-  color: rgba(255, 187, 29, 0.692);
+  color: rgb(171, 55, 255);
   font-size: 1.5rem;
 }
 .ProjectsSection .project-tile .content p {
@@ -160,7 +163,7 @@
 }
 .ProjectsSection .project-tile .content .buttons a {
   text-decoration: none;
-  background-color: rgb(255, 187, 29);
+  background-color: rgb(171, 55, 255);
   color: black;
   font-weight: 400;
   font-size: 1.2rem;
@@ -169,15 +172,15 @@
 }
 .ProjectsSection .project-tile .content .buttons a.alt {
   background-color: transparent;
-  border: 2px solid rgb(255, 187, 29);
-  color: rgb(255, 187, 29);
+  border: 2px solid rgb(171, 55, 255);
+  color: rgb(171, 55, 255);
 }
 
 .ContactSection {
   margin-top: 7rem;
 }
 .ContactSection h2 {
-  color: rgba(255, 187, 29, 0.692);
+  color: rgb(171, 55, 255);
 }
 .ContactSection .contact-wrapper {
   background-color: black;
@@ -198,7 +201,7 @@
   gap: 1rem;
 }
 .ContactSection .contact-wrapper .buttons .con span {
-  color: rgba(255, 187, 29, 0.692);
+  color: rgb(171, 55, 255);
   font-size: 1.2rem;
 }
 .ContactSection .contact-wrapper .buttons .con a {
@@ -207,7 +210,7 @@
   justify-content: center;
   align-items: center;
   width: 3rem;
-  background-color: rgb(255, 187, 29);
+  background-color: rgb(171, 55, 255);
   color: black;
   font-weight: 400;
   font-size: 1.2rem;
@@ -219,6 +222,6 @@
 }
 .ContactSection .contact-wrapper .buttons .con a.alt {
   background-color: transparent;
-  border: 2px solid rgb(255, 187, 29);
-  color: rgb(255, 187, 29);
+  border: 2px solid rgb(171, 55, 255);
+  color: rgb(171, 55, 255);
 }/*# sourceMappingURL=App.css.map */

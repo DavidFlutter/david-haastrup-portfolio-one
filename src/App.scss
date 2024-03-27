@@ -1,6 +1,6 @@
 $bg: rgb(31, 31, 31);
-$theme: rgb(255, 187, 29);
-$themeDull: rgba(255, 187, 29, 0.692);
+$theme: rgb(171, 55, 255);
+$themeDull: rgb(171, 55, 255);
 $textColour: rgb(194, 194, 194);
 
 .wrapper{
@@ -25,7 +25,7 @@ $textColour: rgb(194, 194, 194);
     h1{
         padding: 0;
         margin: 0;
-        font-weight: 400;
+        font-weight: 600;
         font-size: 1.5rem;
         color: $theme
     }
@@ -63,8 +63,8 @@ $textColour: rgb(194, 194, 194);
             color: $themeDull;
             font-size: 3rem;
             span{
-                background-color: yellow;
-                color: black;
+                background-color: rgb(149, 0, 255);
+                color: white;
                 padding: 0rem 0.5rem ;
                 border-radius: 0.5rem
             }
@@ -112,6 +112,9 @@ $textColour: rgb(194, 194, 194);
 @media (max-width: 600px) {
     .HeroSection{
         grid-template-columns: 1fr;
+        .hero-image{
+            display: none;
+        }
     }
 }
 
